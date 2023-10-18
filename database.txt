@@ -1,0 +1,36 @@
+Here's a textual description of the ER diagram:
+
+Entities:
+
+Drive
+Vehicle
+Person
+Address
+Student
+Professor
+Attributes:
+
+Drive entity:
+    Date
+    Distance
+Vehicle entity:
+    Model
+    Plate_Number
+Person entity:
+    ID (Primary Key)
+    Name
+Address entity:
+    Street
+    City
+    Country
+Student entity:
+    Number (Unique Identifier)
+    Person_ID (Foreign Key referencing Person)
+Professor entity:
+    Salary
+    Person_ID (Foreign Key referencing Person)
+Relationships:
+
+Person to Address: One-to-One (a person has one address, and an address belongs to one person).
+Student to Person: One-to-One (a student is associated with one person, and a person can be associated with one student).
+Professor to Person: One-to-One (a professor is associated with one person, and a person can be associated with one professor).
